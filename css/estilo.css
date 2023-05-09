@@ -1,0 +1,277 @@
+/*Body*/
+body{
+		/*para colocar ina img de fondo*/
+	background-image:url("../imagenes/fondo1234.jpg");
+		/*para no repetir la img de fondo*/
+	background-repeat: no-repeat;
+		/*para ajustar el tamaño de la imagen*/
+	background-size: 100% 100%;
+	/*Font-Family es para el tipo de letra: si el 1o. no lo encuentra en el navegador, coloca el segundo
+	, si no el tercero*/
+	font-family: "Lucida Console", "Courier New", monospace;
+	/*Font-size es para el tamaño se expresa en px*/
+	font-size: 30px;
+	/*Color es para el color de las letras: Puedes colocar su 
+	valor hexadecimal, el nombre del color o valores rbg*/
+	color: #1B2631;
+}
+hr{
+	/*border es para la linea
+	tamaño en px Tipo de linea y color*/
+	border: 5px solid #032A95;
+	/*border-radius es para el terminado de las orillas
+	el radio que tendra se expresa en px*/
+	border-radius: 5px;
+}
+
+p{
+	/*Text-align se usa para alinear el texto
+	por default estan alineados a la izquierda*/
+	text-align:justify;
+	font-size:20px;
+	color:black;
+}
+tables,td,tr{
+	/*linea grosor y tipo de linea*/
+	border:4px solid;
+	/*color de la linea*/
+	border-color:black;
+	/*alineacion del texto*/
+	text-align:center;
+	/*color de fondo*/
+	background-color:#CACFD2;
+}
+th{
+	background-color:white;
+}
+ul{
+	/*indica el tipo de viñeta, en este caso 
+	un circulo, puede ser tmbn un cuadro*/
+	list-style-type:circle;
+	list-style-position: inside;
+}
+
+ol{
+	/*Algunos de los valores de list-style-type son:
+	lower-alpha; lower-roman; upper-alpha; upper-roman;
+	a,b,c,d,e,f i,ii,iii,iv A,B,C,D,E,F I,II,III,IV*/
+	list-style-type:upper-roman;
+	list-style-position: inside;
+}
+.pie{
+	text-align:center;
+	font-size:10px;
+	color:#4A235A;
+	font-family: Arial, Biondi, "Lucida Console";
+	font-weight:bold;
+}
+.table-text{
+	font-size:10px;
+	font-family:Arial;
+	color:Red;
+}
+.text{
+	font-size:40px;
+	font-family:fuente1;
+	color:Red;
+	font-weight:bold;
+	text-align:center
+}
+.img-marquee{
+	width:400px;
+	height:400px;
+}
+.Bottom{
+	Border-radius:60%;
+	Width:100px;
+	height:100px;
+}
+.img-table{
+	width:250px;
+	height:250px;
+}
+.other-img{
+	width:500px;
+	height:500px;
+	border:2px solid;
+	padding:10px;
+	border-color:pink;
+}
+@font-face{
+	font-family:fuente1;
+	src: url ("../fuentes/Vogue.ttf");
+}
+@font-face{
+	font-family:fuente2;
+	src: url ("../fuentes/VarsityTeam-Bold.otf");
+}
+@font-face{
+	font-family:fuente3;
+	src: url ("../fuentes/varsity_regular.varsity_regular");
+}
+@font-face{
+	font-family:fuente4;
+	src: url ("../fuentes/Type Machine.ttf");
+}
+*{
+	margin:0px;
+	padding:0px;
+}
+
+div#top{
+	width:100%;
+	height:50px;
+	background-image:linear-gradient(#0055FF,#8BB2FF) ;
+}
+div#principal{
+	margin:auto;
+	margin-top:15px;
+	width:1000px;
+	height:600px;
+	background-image:radial-gradient(#0055FF,#8BB2FF);
+}
+div#pri{
+	margin:auto;
+	margin-top:15px;
+	width:1000px;
+	height:1100px;
+	background-image:radial-gradient(#0055FF,#8BB2FF);
+}
+div#pro{
+	margin:auto;
+	margin-top:15px;
+	width:1200px;
+	height:2150px;
+	background-image:radial-gradient(#0055FF,#8BB2FF);
+}
+div#pie{
+	width:100%;
+	height:70px;
+	background-color:red;
+}
+.caja{
+	height:325px;
+	width:250px;
+	background:#7BA7FF;
+	border:1px solid black;
+	margin:5px;
+	color:black;
+	text-align:center;
+	display:inline-block;
+}
+.caja:hover{
+	box-shadow:0 0 10px red;
+	transform:scale(1.3);
+}
+.caja-texto{
+	padding-top:2px;
+	font-size:20px;
+	color:blue;
+	font-weight:bold;
+}
+.texto-adicional{
+	padding-top:5px;
+	font-size:15px;
+}
+.carrusel{
+	width:600px;
+	margin:auto;
+	box-sizing:border-box;
+}
+.contecarrusel{
+	width:100%;
+	height:400px;
+	overflow:hidden;
+	box-sizing:border-box;
+}
+.itemcarrusel{
+	position:relative;
+	width:100%;
+	height:100%;
+	box-sizing:border-box;
+}
+.itemcarruseltarjeta{
+	width:100%;
+	height:100%;
+	box-sizing:border-box;
+}
+.itemcarruselarrows{
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	height:100%;
+	width:100%;
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+	padding:20px;
+	box-sizing:border-box;
+}
+.itemcarruselarrows >i:hover{
+	cursor:pointer;
+}
+.contercarruselcontroller{
+	width:100%;
+	display:flex;
+	justify-content:center;
+}
+.contercarruselcontroller >a {
+	text-decoration:none;
+	font-size:32px;
+	color:grey;
+}
+.itemcarruselarrows >a >i {
+	color:white;
+}
+div#carrusell{
+	margin:auto;
+	margin-top:15px;
+	width:1000px;
+	height:1000px;
+	background-image:radial-gradient(#0055FF,#8BB2FF);
+}
+.tp{
+	width:600px;
+	background-image:linear-gradient(gray,black);
+}
+.productos{
+	text-align:center;
+	font-size:18px;
+	color:white;
+	font-family:MIFUENTE;
+}
+.cajat{
+	height:100px;
+	width:100px;
+	background:red;
+	border:1px solid black;
+	margin:5px;
+	color:black;
+	text-align:center;
+	display:inline-block
+}
+.cajat:hover{
+	box-shadow:0 0 10px black;
+	transform:scale(1.3);
+}
+.precio{
+	width:600px;
+	background-image:linear-gradient(red,black);
+}
+.productosp{
+	text-align:center;
+	font-size:50px;
+	color:white;
+	font-family:MIFUENTE;
+}
+
+
+
+
+
+
+
+
+
